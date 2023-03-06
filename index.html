@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Embracing Equity in Sport</title>
+    <meta name="description"
+          content="Embracing Equity in Sport"/>
+
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/orange.css" id="theme-color">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+<!--navigation-->
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="https://www.statsperform.com/">
+                StatsPerform
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#home">Live Event</a>
+                    </li>
+            
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#blog">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<!--hero header-->
+<section class="py-7 py-md-0 bg-hero" id="home">
+    <div class="container">
+        <div class="row vh-md-100">
+            <div class="col-md-12 col-sm-8 col-12 mx-auto my-auto text-center">
+                <h1 class="heading-black text-capitalize">Embracing Equity in Sport</h1>
+                <p class="lead py-3">Panel discussion</p>
+                <center>
+                     <video height="400" id="video" controls></video>
+                </center>
+
+                    <script>
+                      var video = document.getElementById('video');
+                      if (Hls.isSupported()) {
+                        var hls = new Hls({
+                          debug: true,
+                        });
+                        hls.loadSource('https://795152.akamaized.net/hls/live/2016226/rtv-phenix-ch10/15di1dnyyb0eq182rowvuoctg9.m3u8?reportingKey=eventId-2187171_partnerId-25&hdnea=st=1668102198~exp=1688102196~acl=/*/2016226*~hmac=d6222dbb55103b399e57879a472a741fb43663db02dced10b8adf13c49f40fc1&unique_id=fc77ba3b4a77ca2bb7c9a538d4973e64fe8616d294312498cb58');
+                        hls.attachMedia(video);
+                        hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                          video.muted = false;
+                          video.play();
+                        });
+                      }
+                   // URL for the live event: https://744133.akamaized.net/hls/live/716314/ch60/t8f6gqybz1d81l35cb19ylsz9.m3u8?reportingKey=eventId-2188209_partnerId-25&hdnea=st=1668103874~exp=1688103872~acl=/*/716314*~hmac=cb2d1cff9deb455d8f6f145868ed0bbec10b5dcf32406f544e4ebcd1b2b50094&unique_id=0e0cd36321497583d7b01df228ef3e95f3ede10a9682cd0f44970d
+                    </script>
+                    
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--news section-->
+<section class="py-4 bg-dark section-angle top-left bottom-left" id="blog">
+   
+</section>
+
+<!--footer-->
+<footer class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mr-auto">
+                <h5>About StatsPerform</h5>
+                <p class="text-muted">Stats Perform harnesses the true power of sports data by leveraging advancements in artificial intelligence to generate the industry's richest insights.</p>
+                <ul class="list-inline social social-sm">
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <ul class="list-unstyled">
+                    <li><a href="https://www.statsperform.com/media-and-tech/">MEDIA & TECH</a></li>
+                    <li><a href="https://www.statsperform.com/betting-fantasy/">BETTING & FANTASY</a></li>
+                    <li><a href="https://www.statsperform.com/team-performance/">TEAM PERFORMANCE</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <ul class="list-unstyled">
+                    <li><a href="https://www.statsperform.com/careers/">ARTIFICIAL INTELLIGENCE</a></li>
+                    <li><a href="https://www.statsperform.com/resources/">RESOURCES</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; 2023 StatsPerform - All Rights Reserved
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--scroll to top-->
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
