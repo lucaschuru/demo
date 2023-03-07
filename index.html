@@ -58,7 +58,11 @@
                 <h1 class="heading-black text-capitalize">Embracing Equity in Sport</h1>
                 <p class="lead py-3">Panel discussion</p>
                 <center>
-                     <video height="400" id="video" controls></video>
+
+
+                     <video height="400" id="video" controls poster="background.png" >
+                         
+                     </video>
                 </center>
 
                     <script>
@@ -67,7 +71,7 @@
                         var hls = new Hls({
                           debug: true,
                         });
-                        hls.loadSource('https://795152.akamaized.net/hls/live/2016226/rtv-phenix-ch10/15di1dnyyb0eq182rowvuoctg9.m3u8?reportingKey=eventId-2187171_partnerId-25&hdnea=st=1668102198~exp=1688102196~acl=/*/2016226*~hmac=d6222dbb55103b399e57879a472a741fb43663db02dced10b8adf13c49f40fc1&unique_id=fc77ba3b4a77ca2bb7c9a538d4973e64fe8616d294312498cb58');
+                        hls.loadSource('https://795152.akamaized.net/hls/live/2016226/rtv-phenix-ch10/1a0s6924spjf21ndcaw8hgovul.m3u8?reportingKey=eventId-2187567_partnerId-25&hdnea=st=1677181613~exp=1679181611~acl=/*/2016226*~hmac=de0efe7f2fc0c62a928f3b460f09696b5c9d1c0b20c8697f74b0b663db0f5c62&unique_id=64ace5f40e8addc96d87d543b2fa864e557ee90fae4607a41268');
                         hls.attachMedia(video);
                         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
                           video.muted = false;
